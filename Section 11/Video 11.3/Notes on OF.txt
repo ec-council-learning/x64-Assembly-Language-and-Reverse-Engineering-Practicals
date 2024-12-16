@@ -1,0 +1,6 @@
+
+BL 1 Byte
+range -128 to 127
+
+BX Word (2 bytes)
+range: -32768 to 32767

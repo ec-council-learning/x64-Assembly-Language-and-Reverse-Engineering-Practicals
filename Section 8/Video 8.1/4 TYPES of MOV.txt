@@ -1,0 +1,6 @@
+4 TYPES of MOV:
+
+mov reg, imm
+mov mem, imm
+mov rax, mem
+mov mem, reg

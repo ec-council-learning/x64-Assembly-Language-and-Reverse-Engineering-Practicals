@@ -1,0 +1,13 @@
+ADD and SUB:
+
+add reg,imm
+sub reg,imm
+
+add reg,reg
+sub reg,reg
+
+add mem,imm
+sub mem,imm
+
+add reg,mem
+sub mem,reg

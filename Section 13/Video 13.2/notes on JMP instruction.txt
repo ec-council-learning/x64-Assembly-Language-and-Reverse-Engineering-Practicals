@@ -1,0 +1,9 @@
+
+; jmp destination
+
+; jmp address
+    
+; jmp reg
+    
+; jmp mem 
+    

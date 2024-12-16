@@ -1,0 +1,18 @@
+
+; jl, jle
+cmp rax, rbx
+
+; jg, jge
+
+
+
+JL  = Jump if Less
+JLE = Jump if Less or equal
+JG  = Jump if Greater
+JGE = Jump if Greater or Equal
+   
+   
+   
+
+
+       

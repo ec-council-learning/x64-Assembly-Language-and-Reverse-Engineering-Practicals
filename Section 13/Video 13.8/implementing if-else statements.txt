@@ -1,0 +1,28 @@
+
+; if (a > b)
+;   b = 3;
+; else 
+;   a = 3;
+; endif
+    
+if:        
+    mov rax,qword ptr[a]
+    cmp rax,qword ptr[b]
+    jg else
+    
+    mov qword ptr[a],3
+    jmp endif
+    
+else:    
+    mov qword ptr[b],3
+    
+endif:
+    
+   
+a -> 0000000000407100
+
+b -> 0000000000407120
+
+else -> 00000000004015A6
+
+endif -> 00000000004015B9

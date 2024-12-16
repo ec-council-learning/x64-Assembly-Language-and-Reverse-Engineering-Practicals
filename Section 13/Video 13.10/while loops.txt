@@ -1,0 +1,26 @@
+
+//--- C CODE ---
+ 
+ int counter = 1;
+ int b = 3;
+ while (counter <= b)
+   counter++;
+//--- endwhile
+    
+;--- ASSEMBLY CODE ---
+        
+    mov rcx,qword ptr[counter]
+	mov rbx,qword ptr[b]
+	
+while:
+    cmp rcx,rbx
+    jg endwhile
+    inc rcx
+    jmp while
+    
+endwhile:
+    
+counter-> 0000000000407080 <- 1
+b-> 00000000004070A0 <- 3
+while-> 0000000000401572
+endwhile-> 00000000004015BA

@@ -1,0 +1,25 @@
+
+; if (a > b and b > c)
+;   a = 4;
+; endif
+
+if:    
+    mov rax,qword ptr[a]
+    mov rbx,qword ptr[b]
+	mov rcx,qword ptr[c]
+    cmp rax,rbx
+    jle endif
+    cmp rbx,rcx
+    jle endif
+    
+    mov qword ptr[a],4
+    
+endif:
+
+
+a -> 00000000004070C0 <- 3
+b -> 00000000004070E0 <- 2
+c -> 0000000000407100 <- 1
+
+endif -> 00000000004015B9
+   

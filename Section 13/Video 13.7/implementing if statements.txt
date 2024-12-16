@@ -1,0 +1,29 @@
+
+
+
+
+; if (length == 0)
+;   length = 1;
+; endif
+    
+if:        
+    mov rax,qword ptr [length]
+    test rax,rax
+    jne endif
+    
+    mov qword ptr [length],1
+    
+endif:
+
+
+if:        
+    mov rax,qword ptr [length]
+
+    cmp rax,0
+    jne endif
+    
+    mov qword[length],1
+    
+endif:
+    
+   

@@ -1,0 +1,12 @@
+
+Carry Flag (CF), Overflow Flag (OF), Sign Flag (SF), and Zero Flag (ZF) in x64 assembly programming:
+
+Carry Flag (CF): This flag is primarily used in arithmetic operations. It is set when there is an overflow out of the most significant bit for unsigned operations, indicating that the result was too large to fit in the register. For example, in an addition operation, if the sum of two numbers exceeds the maximum value that can be stored in the destination operand, the CF is set. It's also used in multi-precision arithmetic operations.
+
+Overflow Flag (OF): The OF is set when a signed arithmetic operation results in a value too large (or too small) to be represented in the destination operand. This occurs when there's an overflow or underflow out of the range of representable values for signed numbers. For instance, adding two large positive signed integers might result in a negative value if an overflow occurs, in which case the OF would be set.
+
+Sign Flag (SF): This flag indicates the sign of the result of an arithmetic or logical operation. It is set if the result is negative (i.e., the most significant bit of the result is 1 in two's complement representation). The SF is often used in conjunction with the OF to determine overflow in subtraction and comparison operations.
+
+Zero Flag (ZF): The ZF is set if the result of an arithmetic or logical operation is zero. This flag is often used for equality checks in conditional branch instructions. For example, after a subtract operation, if the ZF is set, it indicates that the two operands were equal.
+
+These flags are part of the processor's status register and are automatically set or cleared by the CPU based on the results of various operations. They play a crucial role in decision-making and controlling the flow of a program.

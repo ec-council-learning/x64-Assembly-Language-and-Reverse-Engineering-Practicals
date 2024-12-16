@@ -1,0 +1,10 @@
+
+
+OR operation:
+
+or destination, source
+or reg, imm  
+or reg, reg 
+    
+       
+   

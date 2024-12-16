@@ -1,0 +1,10 @@
+AND operations:
+
+and destination, source 
+	
+and reg, imm     
+    
+and reg, reg    
+    
+  
+   

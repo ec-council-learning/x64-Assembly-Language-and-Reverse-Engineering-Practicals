@@ -1,0 +1,25 @@
+
+    ; jz (je) jnz (jne)
+    cmp rax, 0
+    jz 0x0000000000401598
+    
+    ; jc (jb) jnc (jae)
+	mov rax, 1
+    cmp rax, 2
+    jb 0000000000401598
+	
+	
+JZ = Jump if Zero
+JE = JUmp if Equal
+JNZ = Jump if Not Zero
+JNE = Jump if Not Equal
+
+JC = Jump if Carry
+JB = Jump if Below
+JNC = Jump if No Carry
+JAE = Jump if Above or Equal
+   
+   
+
+
+       

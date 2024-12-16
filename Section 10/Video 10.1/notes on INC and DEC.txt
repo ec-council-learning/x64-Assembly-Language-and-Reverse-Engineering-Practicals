@@ -1,0 +1,8 @@
+
+INC and DEC:
+
+inc reg
+inc mem
+
+dec reg
+dec mem

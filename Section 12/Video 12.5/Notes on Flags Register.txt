@@ -1,0 +1,16 @@
+AND, OR, XOR
+modifies SF ZF 
+no effect on OF, CF
+        
+mov al,0b10001000
+and al,0
+    
+mov bl,0b10001000
+or  bl,0b11111111
+    
+xor rax, rax
+    
+
+	
+
+	

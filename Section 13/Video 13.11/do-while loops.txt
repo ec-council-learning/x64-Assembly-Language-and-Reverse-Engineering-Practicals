@@ -1,0 +1,30 @@
+
+//--- C CODE ---
+
+int counter = 1;
+int b = 3;
+do
+	counter++;
+while (counter <= b)
+
+
+
+
+;--- ASSEMBLY CODE ---
+
+dowhile:
+    inc qword ptr[counter]
+    
+    mov rcx,qword ptr[counter]
+    cmp rcx,qword ptr[b]
+    jle dowhile
+	
+	
+
+;--- MEMORY ALLOCATIONS ---
+
+counter-> 0000000000407080 <- 1
+b-> 00000000004070A0 <- 3
+dowhile-> 0000000000401564
+   
+    

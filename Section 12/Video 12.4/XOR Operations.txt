@@ -1,0 +1,10 @@
+
+XOR Operations:
+
+xor destination, source
+xor reg, imm    
+xor reg, reg  
+    
+    
+   10110011
+   

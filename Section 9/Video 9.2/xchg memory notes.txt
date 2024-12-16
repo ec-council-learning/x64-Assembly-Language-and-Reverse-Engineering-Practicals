@@ -1,0 +1,38 @@
+How to swap data between 2 memory address?
+
+xchg mem, mem 
+
+[ Scroll down for solution]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mov rax, mem1
+xchg rax, mem2
+mov mem1, rax
+
+

@@ -1,0 +1,5 @@
+CMP instruction:
+
+sytax:
+
+cmp rax, 0

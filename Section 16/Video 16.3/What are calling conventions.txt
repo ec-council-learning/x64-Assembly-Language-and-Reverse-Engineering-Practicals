@@ -1,0 +1,29 @@
+What are calling conventions:
+
+x64 calling conventions are a set of rules that dictate how functions receive parameters from a caller and how they return a value. On Windows OS, we use the Microsoft x64 calling convention.
+
+Register Usage for Arguments:
+
+The first four integers arguments, which includes pointer arguments (memory addresses) of a function are passed in the RCX, RDX, R8, and R9 registers, in that order. If a function has more than four integer or pointer arguments, the remaining arguments are passed on the stack.
+
+Return Values:
+
+Integers and Pointers: Functions that return an integer or pointer type use the RAX register to store the return value.
+
+Stack Alignment:
+
+The stack must always be aligned to a 16-byte boundary just before a function call is made. When pushing values, eg, push r10, it will push 8 bytes to the stack. And this disrupts the 16-byte alignment. So we need to do sub rsp, 8 to re-align it back to 16-bytes alignment.
+
+Shadow Space:
+
+The caller is responsible for allocating 32 bytes of "shadow space" on the stack directly before making a function call. This space is intended for the callee to store the contents of the RCX, RDX, R8, and R9 registers if needed. 
+
+
+Volatile Registers: 
+
+The RAX, RCX, RDX, R8, R9, R10, R11 registers are considered volatile. This means that if a function uses these registers, it does not need to preserve their original values. Hence, the caller must save these if it wishes to use them after a function call.
+
+Non-Volatile Registers: 
+
+The RBX, RBP, RDI, RSI, RSP, R12, R13, R14, R15 are non-volatile. Functions must preserve the original values of these registers, meaning if they are used within a function, the function must save the original value and restore it before returning.
+

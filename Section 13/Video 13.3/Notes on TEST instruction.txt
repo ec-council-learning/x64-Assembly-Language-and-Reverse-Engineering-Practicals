@@ -1,0 +1,9 @@
+
+; test reg, imm   
+; test reg, reg  
+
+
+mov  rax,10001000
+test rax,    1010
+test rax, rax
+
